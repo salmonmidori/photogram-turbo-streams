@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
   def edit
     respond_to do |format|
       format.html
-      format.js
+      format.turbo_stream
     end
   end
 
