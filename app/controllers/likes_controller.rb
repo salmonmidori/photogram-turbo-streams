@@ -23,7 +23,7 @@ class LikesController < ApplicationController
     respond_to do |format|
       format.html { redirect_back fallback_location: @like.photo, notice: "Like was successfully destroyed." }
       format.json { head :no_content }
-      format.js
+      format.turbo_stream
     end
   end
 
